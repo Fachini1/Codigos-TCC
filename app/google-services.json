@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "777393626919",
+    "firebase_url": "https://projetotcc-b0798-default-rtdb.firebaseio.com",
+    "project_id": "projetotcc-b0798",
+    "storage_bucket": "projetotcc-b0798.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777393626919:android:ba5d184e56fb0bb80ad302",
+        "android_client_info": {
+          "package_name": "com.codepalace.accelerometer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-z_cZYOJr9XVO6UIuI2_7YGhFIDDi8zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

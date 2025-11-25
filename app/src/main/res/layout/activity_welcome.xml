@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- 🔹 Barra superior (Toolbar) -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/card_dark"
+        android:title="Detecção de Buracos 🚗"
+        android:titleTextColor="@android:color/white"
+        app:titleCentered="true"
+        app:navigationIcon="@android:drawable/ic_menu_compass" />
+
+    <!-- 🔹 Conteúdo principal -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <!-- Seção 1: Monitoramento -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📈 Monitoramento"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#66FFFFFF"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnAcelerometro"
+                    android:layout_width="250dp"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/red_button"
+                    android:text="ACELERÔMETRO"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="6dp" />
+
+                <!-- Seção 2: Mapa e Viagem -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🗺️ Mapa e Viagem"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#66FFFFFF"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnMapa"
+                    android:layout_width="250dp"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/green_button"
+                    android:text="MAPA"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="6dp" />
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="250dp"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/blue_button"
+                    android:text="🚀 Iniciar Viagem"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="6dp" />
+
+                <Button
+                    android:id="@+id/btnParar"
+                    android:layout_width="250dp"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/gray_button"
+                    android:text="🛑 Parar Viagem"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:elevation="6dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- BOTÕES FLUTUANTES -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Abrir site"
+            app:backgroundTint="@color/blue_button"
+            app:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSuporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Suporte por email"
+            app:backgroundTint="@color/red_button"
+            app:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+    </FrameLayout>
+</LinearLayout>
